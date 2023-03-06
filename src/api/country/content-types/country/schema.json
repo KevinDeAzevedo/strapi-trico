@@ -42,6 +42,11 @@
       "relation": "oneToMany",
       "target": "api::location.location",
       "mappedBy": "country"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.seo"
     }
   }
 }

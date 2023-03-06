@@ -55,6 +55,26 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "nights": {
+      "type": "integer",
+      "min": 0,
+      "default": 0
+    },
+    "distance": {
+      "type": "integer",
+      "min": 0,
+      "default": 0
+    },
+    "water": {
+      "type": "integer",
+      "min": 0,
+      "default": 0
+    },
+    "gas": {
+      "type": "integer",
+      "min": 0,
+      "default": 0
     }
   }
 }
