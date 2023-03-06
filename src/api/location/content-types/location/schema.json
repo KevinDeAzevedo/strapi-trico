@@ -43,7 +43,7 @@
         "audios"
       ]
     },
-    "location": {
+    "gmaps": {
       "type": "string"
     },
     "country": {
