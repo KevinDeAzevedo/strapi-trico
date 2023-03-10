@@ -14,24 +14,29 @@
   "attributes": {
     "name": {
       "type": "string",
-      "unique": true
+      "unique": true,
+      "required": true
     },
     "cover": {
       "type": "media",
       "multiple": false,
-      "required": false,
+      "required": true,
       "allowedTypes": [
         "images"
       ]
     },
     "greeting": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "introduction": {
-      "type": "richtext"
+      "type": "richtext",
+      "maxLength": 40,
+      "required": true
     },
     "subtitle": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "slug": {
       "type": "uid",

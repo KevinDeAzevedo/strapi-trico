@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "locations",
+  "collectionName": "articles",
   "info": {
-    "singularName": "location",
-    "pluralName": "locations",
-    "displayName": "Locations",
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Articles",
     "description": ""
   },
   "options": {
@@ -46,43 +46,19 @@
         "audios"
       ]
     },
-    "gmaps": {
-      "type": "string"
-    },
-    "country": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::country.country",
-      "inversedBy": "locations"
-    },
     "slug": {
       "type": "uid",
       "targetField": "title"
     },
-    "nights": {
-      "type": "integer",
-      "min": 0,
-      "default": 0
-    },
-    "distance": {
-      "type": "integer",
-      "min": 0,
-      "default": 0
-    },
-    "water": {
-      "type": "integer",
-      "min": 0,
-      "default": 0
-    },
-    "gas": {
-      "type": "integer",
-      "min": 0,
-      "default": 0
-    },
     "intro": {
       "type": "text",
-      "required": true,
-      "maxLength": 30
+      "maxLength": 30,
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.seo"
     }
   }
 }
