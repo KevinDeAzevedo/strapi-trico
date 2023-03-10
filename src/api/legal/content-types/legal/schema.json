@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "legals",
+  "info": {
+    "singularName": "legal",
+    "pluralName": "legals",
+    "displayName": "Legals"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "tricos",
+  "info": {
+    "singularName": "trico",
+    "pluralName": "tricos",
+    "displayName": "Trico",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "intro": {
+      "type": "richtext",
+      "required": true
+    },
+    "isFinished": {
+      "type": "boolean",
+      "default": false
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.seo"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "carnets",
+  "info": {
+    "singularName": "carnet",
+    "pluralName": "carnets",
+    "displayName": "Carnet"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "intro": {
+      "type": "richtext"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.seo"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "newspages",
+  "info": {
+    "singularName": "newspage",
+    "pluralName": "newspages",
+    "displayName": "Newspage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "intro": {
+      "type": "richtext"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.seo"
+    }
+  }
+}
