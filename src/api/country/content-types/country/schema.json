@@ -31,16 +31,11 @@
     },
     "introduction": {
       "type": "richtext",
-      "maxLength": 40,
       "required": true
     },
     "subtitle": {
       "type": "string",
       "required": true
-    },
-    "slug": {
-      "type": "uid",
-      "targetField": "name"
     },
     "locations": {
       "type": "relation",
@@ -52,6 +47,10 @@
       "type": "component",
       "repeatable": true,
       "component": "shared.seo"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }

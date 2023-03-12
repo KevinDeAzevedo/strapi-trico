@@ -4,7 +4,8 @@
   "info": {
     "singularName": "contact",
     "pluralName": "contacts",
-    "displayName": "Contact"
+    "displayName": "Contact",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,14 +19,13 @@
     "intro": {
       "type": "richtext"
     },
-    "image": {
-      "allowedTypes": [
-        "images"
-      ],
+    "avatar": {
       "type": "media",
       "multiple": false,
       "required": true,
-      "private": true
+      "allowedTypes": [
+        "images"
+      ]
     },
     "seo": {
       "type": "component",

@@ -4,6 +4,10 @@ module.exports = ({ env }) => ({
     enabled: true,
     config: {
       contentTypes: {
+        country: {
+          field: 'slug',
+          references: 'name',
+        },
         location: {
           field: 'slug',
           references: 'title',
@@ -18,5 +22,13 @@ module.exports = ({ env }) => ({
   seo: {
     enabled: true,
   },
+  'transformer': {
+    enabled: true,
+    config: {
+      responseTransforms: {
+        removeAttributesKey: true,
+      },
+    }
+ }
   // ...
 });
