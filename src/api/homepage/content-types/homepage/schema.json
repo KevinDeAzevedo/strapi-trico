@@ -33,21 +33,40 @@
       "repeatable": true,
       "component": "shared.seo"
     },
-    "images": {
+    "avatar": {
       "type": "media",
-      "multiple": true,
-      "required": true,
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "firstCover": {
       "allowedTypes": [
         "images",
         "videos"
-      ]
-    },
-    "avatar": {
-      "allowedTypes": [
-        "images"
       ],
       "type": "media",
-      "multiple": false
+      "multiple": false,
+      "required": true
+    },
+    "secondCover": {
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "thirdCover": {
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }
