@@ -49,8 +49,7 @@
     },
     "intro": {
       "type": "text",
-      "required": true,
-      "maxLength": 115
+      "required": true
     },
     "seo": {
       "type": "component",
