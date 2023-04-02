@@ -59,29 +59,44 @@
       "type": "uid",
       "targetField": "title"
     },
-    "nights": {
+    "intro": {
+      "type": "text",
+      "required": true
+    },
+    "days": {
       "type": "integer",
       "min": 0,
       "default": 0
     },
     "distance": {
+      "type": "decimal",
+      "min": 0,
+      "default": 0
+    },
+    "naturespot": {
       "type": "integer",
       "min": 0,
       "default": 0
     },
-    "water": {
+    "culturespot": {
       "type": "integer",
       "min": 0,
       "default": 0
     },
-    "gas": {
+    "budget": {
+      "type": "decimal"
+    },
+    "hours": {
       "type": "integer",
       "min": 0,
       "default": 0
     },
-    "intro": {
-      "type": "text",
-      "required": true
+    "motion": {
+      "type": "enumeration",
+      "enum": [
+        "à pied",
+        "en voiture"
+      ]
     }
   }
 }
