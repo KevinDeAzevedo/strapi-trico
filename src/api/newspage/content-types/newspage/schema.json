@@ -4,7 +4,8 @@
   "info": {
     "singularName": "newspage",
     "pluralName": "newspages",
-    "displayName": "Newspage"
+    "displayName": "Newspage",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,8 +21,9 @@
     },
     "seo": {
       "type": "component",
-      "repeatable": true,
-      "component": "shared.seo"
+      "repeatable": false,
+      "component": "shared.seo",
+      "required": true
     }
   }
 }

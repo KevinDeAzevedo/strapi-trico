@@ -28,11 +28,6 @@
       "type": "richtext",
       "required": true
     },
-    "seo": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.seo"
-    },
     "avatar": {
       "type": "media",
       "multiple": false,
@@ -42,30 +37,36 @@
       ]
     },
     "firstCover": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "videos"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      ]
     },
     "secondCover": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "videos"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      ]
     },
     "thirdCover": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "videos"
-      ],
-      "type": "media",
-      "multiple": false,
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo",
       "required": true
     }
   }
