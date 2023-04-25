@@ -10,11 +10,11 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "4.7.1",
+    "@strapi/plugin-i18n": "4.9.2",
     "@strapi/plugin-seo": "^1.8.0",
-    "@strapi/plugin-users-permissions": "4.7.1",
+    "@strapi/plugin-users-permissions": "4.9.2",
     "@strapi/provider-email-sendgrid": "^4.9.0",
-    "@strapi/strapi": "4.7.1",
+    "@strapi/strapi": "4.9.2",
     "better-sqlite3": "8.0.1",
     "strapi-plugin-populate-deep": "^2.0.0",
     "strapi-plugin-slugify": "^2.3.2",
