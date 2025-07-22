@@ -2,13 +2,19 @@ module.exports = ({ env }) => ({
   // ...
   email: {
     config: {
-      provider: 'sendgrid',
+      provider: "nodemailer",
       providerOptions: {
-        apiKey: env('SENDGRID_API_KEY'),
+        host: env("SMTP_HOST"),
+        port: env("SMTP_PORT"),
+        auth: {
+          user: env("SMTP_USERNAME"),
+          pass: env("SMTP_PASSWORD"),
+        },
+        // ... any custom nodemailer options
       },
       settings: {
-        defaultFrom: 'contact@trico-ontheroad.com',
-        defaultReplyTo: 'contact@trico-ontheroad.com',
+        defaultFrom: "postmaster@trico-ontheroad.com",
+        defaultReplyTo: "postmaster@trico-ontheroad.com",
       },
     },
   },
@@ -17,30 +23,30 @@ module.exports = ({ env }) => ({
     config: {
       contentTypes: {
         country: {
-          field: 'slug',
-          references: 'name',
+          field: "slug",
+          references: "name",
         },
         location: {
-          field: 'slug',
-          references: 'title',
+          field: "slug",
+          references: "title",
         },
         article: {
-          field: 'slug',
-          references: 'title',
-        }
+          field: "slug",
+          references: "title",
+        },
       },
     },
   },
   seo: {
     enabled: true,
   },
-  'transformer': {
+  transformer: {
     enabled: true,
     config: {
       responseTransforms: {
         removeAttributesKey: true,
       },
-    }
- }
+    },
+  },
   // ...
 });
